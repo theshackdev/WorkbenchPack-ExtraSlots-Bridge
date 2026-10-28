@@ -1,0 +1,12 @@
+{
+  "name": "WorkbenchPack_ExtraSlots_Bridge",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/theshackdev/WorkbenchPack-ExtraSlots-Bridge",
+  "description": "Gives Shack Workbench Pack's backpack its own Backpack slot in Extra Slots, so wearing it leaves your belt on. The bench on your back, Tab crafting and the build radius work from that slot. Client-side.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351",
+    "ValheimModding-Jotunn-2.30.2",
+    "shudnal-ExtraSlots-1.2.21",
+    "TheShackDev-Shack_Workbench_Pack-1.2.0"
+  ]
+}

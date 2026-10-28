@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>WorkbenchPack_ExtraSlots_Bridge</AssemblyName>
+    <RootNamespace>TheShack.WorkbenchPackExtraSlotsBridge</RootNamespace>
+    <Version>1.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <DebugType>none</DebugType>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <ValheimManaged>$(HOME)/.steam/steam/steamapps/common/Valheim/valheim_Data/Managed</ValheimManaged>
+    <ProfileRoot>$(HOME)/.config/r2modmanPlus-local/Valheim/profiles/The Shack Next/BepInEx</ProfileRoot>
+  </PropertyGroup>
+
+  <!-- Compile-time references only; the game, BepInEx, Jotunn and Extra Slots supply them at runtime.
+       Extra Slots is referenced for its public slot API; Shack Workbench Pack is reached through reflection. -->
+  <ItemGroup>
+    <Reference Include="BepInEx" HintPath="$(ProfileRoot)/core/BepInEx.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(ProfileRoot)/core/0Harmony.dll" Private="false" />
+    <Reference Include="Jotunn" HintPath="$(ProfileRoot)/plugins/ValheimModding-Jotunn/Jotunn.dll" Private="false" />
+    <Reference Include="ExtraSlots" HintPath="$(ProfileRoot)/plugins/shudnal-ExtraSlots/ExtraSlots.dll" Private="false" />
+    <Reference Include="assembly_valheim" HintPath="$(ValheimManaged)/assembly_valheim.dll" Private="false" />
+    <Reference Include="assembly_utils" HintPath="$(ValheimManaged)/assembly_utils.dll" Private="false" />
+    <Reference Include="UnityEngine" HintPath="$(ValheimManaged)/UnityEngine.dll" Private="false" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(ValheimManaged)/UnityEngine.CoreModule.dll" Private="false" />
+  </ItemGroup>
+
+</Project>
