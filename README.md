@@ -60,7 +60,7 @@ dotnet build -c Release \
   -p:ProfileRoot="/path/to/your/profile/BepInEx"
 ```
 
-`ProfileRoot` is the `BepInEx` folder of any r2modman profile that has Jotunn and Extra Slots (it needs `core/`, `plugins/ValheimModding-Jotunn/` and `plugins/shudnal-ExtraSlots/`). Without the `-p:` options the project looks for a Linux Steam install and an r2modman profile named "The Shack Next". The DLL lands in `bin/Release/`.
+`ProfileRoot` is the `BepInEx` folder of any r2modman profile that has Jotunn and Extra Slots (it needs `core/`, `plugins/ValheimModding-Jotunn/` and `plugins/shudnal-ExtraSlots/`). Without the `-p:` options the project looks for a Linux Steam install and an r2modman profile named "The Shack Pack Test Environment". The DLL lands in `bin/Release/`.
 
 This is the source of version 1.0.0 on Thunderstore.
 
